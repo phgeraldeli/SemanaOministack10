@@ -1,7 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Routes from './src/routes';
-import { StatusBar } from 'react-native'
+import { StatusBar, YellowBox } from 'react-native'
+
+YellowBox.ignoreWarnings([
+  'Unrecognized WebSocket'
+])
 
 export default function App() {
   return (
@@ -11,17 +15,3 @@ export default function App() {
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#7159c1',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontWeight: 'bold',
-    fontSize: 32,
-    color: '#FFF'
-  }
-});
