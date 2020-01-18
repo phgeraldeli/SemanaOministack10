@@ -16,3 +16,4 @@
 
 ## Mobile
 
+- Aplicação mobile feita em React Native, utilizando a ferramenta Expo.
